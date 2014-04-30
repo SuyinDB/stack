@@ -1,4 +1,7 @@
 ActiveAdmin.register Comment, as: "StoryComment" do
+
+  permit_params :body, :story_id
+  
   # as: "StoryComment" above fixes the problem that Active Admin already has comments in it  
   
   # See permitted parameters documentation:
