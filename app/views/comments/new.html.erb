@@ -1,0 +1,12 @@
+
+<!-- could use an iframe to embed this onto the story show page -->
+
+<h2>Add a comment</h2>
+
+<%= simple_form_for [@story, @comment] do |form| %>
+
+	<%= form.input :body, label: "Your comment" %>
+
+	<%= form.button :submit, "Submit" %>
+
+<% end %>
