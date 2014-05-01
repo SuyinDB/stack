@@ -65,7 +65,7 @@ class StoriesController < ApplicationController
 
 		else 
 
-			# show the new view again when save fails because of uniqueness validation
+			# show the new view again if save fails
 			render "new"
 
 		end	
